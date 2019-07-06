@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ImageUploadModule } from './image-upload/image-upload.module';
 import { AppComponent } from './app.component';
-import { ImageUploadComponent } from './image-upload/image-upload.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ImageUploadComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ImageUploadModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
